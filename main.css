@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+.boxframe {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid black;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.button {
+  background-color: blue;
+  color: white;
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+.tooltipp {
+  background-color: red;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 200px;
+  display: block;
+  transition: all 0.2s;
+  transform: translate(0px, 80px);
+  opacity: 0;
+}
+
+.tt {
+  position: relative;
+}
+
+.tt:hover.tooltipp {
+  display: block;
+  transform: translate(0px, 60px);
+  opacity: 100;
+}
