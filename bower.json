@@ -1,6 +1,7 @@
 {
   "name": "flexbox",
   "dependencies": {
-    "Snap.svg": "~0.4.1"
+    "Snap.svg": "~0.4.1",
+    "jquery": "~2.2.2"
   }
 }
